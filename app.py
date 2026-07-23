@@ -4,7 +4,7 @@ import joblib
 
 # Load Model
 model = joblib.load("heart_model.pkl")
-columns = joblib.load("columns (1).pkl")
+columns = joblib.load("columns.pkl")
 
 # Title
 st.title(" Heart Disease Prediction")
