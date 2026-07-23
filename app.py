@@ -7,9 +7,11 @@ model = joblib.load("heart_model.pkl")
 columns = joblib.load("columns.pkl")
 
 # Title
-st.title(" Heart Disease Prediction")
-st.write("Enter patient details and click Predict.")
-
+st.set_page_config(
+    page_title="Heart Disease Prediction",
+    page_icon="❤️",
+    layout="centered"
+)
 # User Inputs
 
 age = st.number_input("Age", 1, 100, 40)
